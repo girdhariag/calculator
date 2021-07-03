@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style.css">
+    <script src="assets/index.js" defer></script>
+  </head>
+
+  <body>
+    <div class="main-container">
+      <div class="calculator">
+        <div class="close-btn"></div><div class="close-btn"></div><div class="close-btn"></div>
+
+        <div class="display">
+          <div class="eval" id="eval"></div>
+
+          <div class="val" id="val"></div>
+        </div>
+
+        <div class="keys-container">
+          <div class="number-keys">
+            <div class="key-row">
+              <button tabindex="17" class="key-item function-key" data-action="clear" id="clear">C</button>
+              <button tabindex="18" class="key-item function-key" data-action="invert"><span class="offset pull-up">+</span>/<span class="offset pull-down">-</span></button>
+              <button tabindex="19" class="key-item function-key" data-action="percent">%</button>
+            </div>
+
+            <div class="key-row">
+              <button tabindex="3" class="key-item number-key" data-action="number" data-value="7">7</button>
+              <button tabindex="2" class="key-item number-key" data-action="number" data-value="8">8</button>
+              <button tabindex="1" class="key-item number-key" data-action="number" data-value="9">9</button>
+            </div>
+
+            <div class="key-row">
+              <button tabindex="6" class="key-item number-key" data-action="number" data-value="4">4</button>
+              <button tabindex="5" class="key-item number-key" data-action="number" data-value="5">5</button>
+              <button tabindex="4" class="key-item number-key" data-action="number" data-value="6">6</button>
+            </div>
+
+            <div class="key-row">
+              <button tabindex="9" class="key-item number-key" data-action="number" data-value="1">1</button>
+              <button tabindex="8" class="key-item number-key" data-action="number" data-value="2">2</button>
+              <button tabindex="7" class="key-item number-key" data-action="number" data-value="3">3</button>
+            </div>
+
+            <div class="key-row">
+              <button tabindex="10" class="key-item key-larger number-key" data-action="number" data-value="0">0</button>
+              <button tabindex="11" class="key-item number-key" data-action="number" data-value=".">.</button>
+            </div>
+          </div>
+
+          <div class="action-keys">
+            <button tabindex="12" class="key-row key-item" data-action="action" data-value="/">÷</button>
+            <button tabindex="13" class="key-row key-item" data-action="action" data-value="*">×</button>
+            <button tabindex="14" class="key-row key-item" data-action="action" data-value="-">-</button>
+            <button tabindex="15" class="key-row key-item" data-action="action" data-value="+">+</button>
+            <button tabindex="16" class="key-row key-item" data-action="equal">=</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
